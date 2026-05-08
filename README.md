@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 # Configure
 cp .template.env .env
-# Edit .env and set your KIMI_API_KEY (DeepSeek API key)
+# Edit .env and set your DEEPSEEK_API_KEY
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ Key environment variables in `.env`:
 
 | Variable | Default | Description |
 |---|---|---|
-| `KIMI_API_KEY` | — | DeepSeek API key (required) |
+| `DEEPSEEK_API_KEY` | — | DeepSeek API key (required) |
 | `EMB_MODEL` | `sentence-transformers/all-mpnet-base-v2` | Embedding model (768-dim) |
 | `RERANK_MODEL` | `cross-encoder/ms-marco-MiniLM-L-6-v2` | Reranking model |
 | `TOP_K` | `5` | Number of chunks sent to LLM |
