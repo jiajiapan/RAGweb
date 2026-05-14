@@ -31,6 +31,21 @@ python app.py
 
 The Gradio UI launches at `http://localhost:7860`. Upload a PDF, then ask questions in the chat.
 
+## Evaluation
+
+```bash
+# Run baseline metrics on SQuAD (100 questions by default)
+python -m backend.evaluation --samples 100 --top-k 5
+```
+
+Results are printed to stdout and saved to `baseline_metrics.json`. The evaluation:
+- Loads SQuAD v1.1 validation set
+- Indexes all unique contexts into LanceDB
+- Runs retrieval + LLM QA on each question
+- Reports Exact Match (EM) and F1 scores
+
+Requires `datasets` package (in requirements.txt) and a valid `DEEPSEEK_API_KEY`.
+
 ## Code Quality
 
 ```bash

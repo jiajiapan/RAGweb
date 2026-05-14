@@ -1,4 +1,4 @@
-.PHONY: format lint check
+.PHONY: format lint check eval
 
 format:
 	ruff format .
@@ -9,3 +9,6 @@ lint:
 
 check: lint
 	pytest tests/
+
+eval:
+	python -m backend.evaluation --samples 100 --top-k 5

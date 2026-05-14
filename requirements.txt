@@ -101,6 +101,8 @@ torch==2.1.1
 pytest==8.4.1
 
 tqdm==4.66.1
+
+datasets>=2.0.0
 transformers==4.42.4
 typer==0.24.1
 typer-slim==0.24.0

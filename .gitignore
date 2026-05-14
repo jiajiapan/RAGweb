@@ -210,3 +210,6 @@ __marimo__/
 
 .lancedb/
 **/.lancedb/
+
+# Evaluation outputs
+baseline_metrics.json
